@@ -1,0 +1,22 @@
+<template>
+<lightning-card title="Data Binding of Simple property:
+" >
+<p class="slds-p-horizontal_small">
+Name:{Name} <br>
+    Phone:{Phone} <br>
+    age:{age}<br>
+    Address:{address}<br>
+    Pin Code:{PIN_Code}
+</p>
+</lightning-card>
+<lightning-card title="Data Binding of an object:">
+    <p class="slds-p-horizontal_small">
+    Below details are stored in an object and we are refferncing object:<br>
+    Name: {userdetails.name}<br>
+    phone:{userdetails.phone}<br>
+    email:{userdetails.email} 
+    </p>
+    {userdetails}
+</lightning-card>
+    
+</template>

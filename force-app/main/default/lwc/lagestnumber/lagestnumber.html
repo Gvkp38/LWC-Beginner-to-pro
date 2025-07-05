@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Maximum Number">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-3">
+        <lightning-input label="Enter Numbers" placeholder="Ex.. 1 2 3" onchange={getnumbers} >
+        </lightning-input>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+        <br>
+        <br>
+        <lightning-button label="Find" onclick={checkminmax} variant="brand" ></lightning-button>
+    </div></div>
+        <p class="slds-p-horizontal_small">
+            
+        
+        Max Number={maxnumber}<br>
+        Minnimum Value={minimumvalue}
+        </p>
+    </lightning-card>
+</template>
