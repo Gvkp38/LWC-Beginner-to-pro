@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="lwc:if{proprty1} lwc:elseif{property2} lwc:else">
+        <lightning-input label="Enter Number" onchange={getnumber}></lightning-input>
+        <!-- <lightning-button label="check" variant="brand" onclick={display}></lightning-button> -->
+        <template lwc:if={property1}>
+            'Enterred number is in between 1-10'
+        </template>
+        <template lwc:elseif={property2}>
+            'hey you have entered number between 20-30'
+        </template>
+        <template lwc:else>
+            'you have entered number "emo teliyadu" '
+        </template>
+    </lightning-card>
+</template>
