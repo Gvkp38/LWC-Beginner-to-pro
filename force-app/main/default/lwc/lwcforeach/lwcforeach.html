@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="for:each">
+        <strong>This component is buit on for:each check repo for code</strong>
+        <template for:each={array} for:item="currentitem" for:index="index">
+            <div key={currentitem}>
+                {currentitem} -----'>' {index}
+            </div>
+
+        </template>
+    </lightning-card>
+    <lightning-card title="Number Separator">
+        <lightning-input label="Enter Numbers with comma separate" onchange={getnumbers}></lightning-input>
+        <lightning-button slot="actions" onclick={separate} label="Go.." variant="brand"></lightning-button>
+        <template if:true={evennnumber}>
+            Even Numbers:
+            <template for:each={evennnumber} for:item='number'>
+                <div key={number}>
+                    {number}
+                </div>
+            </template>
+        </template>
+        <template if:true={oddnumbers}>
+            odd Numbers:
+            <template for:each={oddnumbers} for:item='number'>
+                <div key={number}>
+                    {number}
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>
