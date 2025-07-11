@@ -1,0 +1,30 @@
+<template>
+    <lightning-card  title="LWC Quiz">
+        <div class="slds-box slds-theme_shade slds-p-around_x-small">
+
+        <template for:each={questions} for:item="ci" for:index="currentindex">
+            <div key={ci.id}>
+                {ci.id} : {ci.question}
+                <ul class="slds-p-left_x-small">
+                    <div class="slds-col">
+                        <li><input type="radio" name={ci.id} value="a" onchange={changeHandler}/>
+                    {ci.options.a}</li></div>
+                    <div class="slds-col"><li></li><input type="radio" name={ci.id} value="b" onchange={changeHandler}/>
+                    {ci.options.b}</li></div>
+                    <div class="slds-col">
+                        <li><input type="radio" name={ci.id} value="c" onchange={changeHandler}/>
+                    {ci.options.c}</li></div>
+                        </ul>
+            </div>
+        </template>
+    
+    </div>
+    <lightning-button label="Submit" onclick={handlesubmit} variant="brand" disabled={isallquestionsans} slot="footer"></lightning-button>
+        
+    <template lwc:if={showresult} >
+        <div class="slds-box">
+        You have answered {score} correctly outoff {questions.length}
+    </div>
+    </template>
+    </lightning-card>
+</template>
