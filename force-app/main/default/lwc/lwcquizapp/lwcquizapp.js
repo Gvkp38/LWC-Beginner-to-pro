@@ -44,4 +44,8 @@ get isallquestionsans()
 {
     return !(this.questions.length===Object.keys(this.questionansmap).length)
 }
+handleclear()
+{
+    this.questionansmap={}
+}
 }

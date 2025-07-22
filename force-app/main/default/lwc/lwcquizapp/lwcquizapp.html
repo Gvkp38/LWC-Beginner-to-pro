@@ -20,7 +20,7 @@
     
     </div>
     <lightning-button label="Submit" onclick={handlesubmit} variant="brand" disabled={isallquestionsans} slot="footer"></lightning-button>
-        
+    <lightning-button label="Clear" onclick={handleclear} variant="Destructive" slot="footer"></lightning-button>  
     <template lwc:if={showresult} >
         <div class="slds-box">
         You have answered {score} correctly outoff {questions.length}

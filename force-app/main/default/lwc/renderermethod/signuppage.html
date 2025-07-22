@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Sign in to GVK Travels">
+        <lightning-input label="First Name" type="text"></lightning-input>
+        <lightning-input label="Last Name" type="text"></lightning-input>
+        <lightning-input label="Date Of Birth" type="date"></lightning-input>
+        <lightning-input type='email' label="User Name"></lightning-input>
+        <lightning-input type="password" label="Password"></lightning-input>
+        <lightning-button-group>
+            <lightning-button 
+            title="Cancel" 
+            label="Cancel" 
+            variant="Destructive" 
+            onclick={handleclick}>
+            </lightning-button>
+            
+                <lightning-button 
+                title="Singin" 
+                label="sign up" 
+                variant="Success" 
+                onclick={Consoleclick}>
+                </lightning-button>
+                </lightning-button-group>
+    </lightning-card>
+</template>
