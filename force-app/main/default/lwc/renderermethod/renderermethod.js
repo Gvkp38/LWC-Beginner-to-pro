@@ -8,12 +8,13 @@ export default class Renderermethod extends LightningElement {
     handleclick(event)
     {
     this.tem=event.target.label;
+    console.log(this.tem);
     }
 
     render()
     {
-        return this.tem==='signup'?signuppage:
-        this.tem==='signin'?signinpage:renderermethod;
+        return this.tem==='Sign up'?signuppage:
+        this.tem==='Sign in'?signinpage:renderermethod;
     }
     Consoleclick(event)
     {

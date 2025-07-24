@@ -1,24 +1,28 @@
 <template>
-    <lightning-card title="Sign in to GVK Travels">
-        <lightning-input label="First Name" type="text"></lightning-input>
-        <lightning-input label="Last Name" type="text"></lightning-input>
-        <lightning-input label="Date Of Birth" type="date"></lightning-input>
-        <lightning-input type='email' label="User Name"></lightning-input>
-        <lightning-input type="password" label="Password"></lightning-input>
-        <lightning-button-group>
-            <lightning-button 
-            title="Cancel" 
-            label="Cancel" 
-            variant="Destructive" 
-            onclick={handleclick}>
-            </lightning-button>
-            
-                <lightning-button 
-                title="Singin" 
-                label="sign up" 
-                variant="Success" 
-                onclick={Consoleclick}>
-                </lightning-button>
+    <div class="slds-grid slds-grid_align-center slds-p-around_small">
+        <lightning-card title="Sign up for GVK Travels" class="slds-box slds-theme_default">
+            <div class="slds-p-around_medium">
+                <lightning-input label="First Name" type="text" class="slds-m-bottom_small"></lightning-input>
+                <lightning-input label="Last Name" type="text" class="slds-m-bottom_small"></lightning-input>
+                <lightning-input label="Date of Birth" type="date" class="slds-m-bottom_small"></lightning-input>
+                <lightning-input type="email" label="Email" class="slds-m-bottom_small"></lightning-input>
+                <lightning-input type="password" label="Password" class="slds-m-bottom_medium"></lightning-input>
+                
+                <lightning-button-group>
+                    <lightning-button 
+                        title="Cancel" 
+                        label="Cancel" 
+                        variant="destructive" 
+                        onclick={handleclick}>
+                    </lightning-button>
+                    <lightning-button 
+                        title="Signup" 
+                        label="Sign up" 
+                        variant="brand" 
+                        onclick={Consoleclick}>
+                    </lightning-button>
                 </lightning-button-group>
-    </lightning-card>
+            </div>
+        </lightning-card>
+    </div>
 </template>
