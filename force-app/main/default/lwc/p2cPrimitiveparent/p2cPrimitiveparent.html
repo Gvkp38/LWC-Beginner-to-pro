@@ -1,0 +1,16 @@
+<template>
+    <c-p2c-alert-child textfrom-parent="i got this text from parent component"></c-p2c-alert-child>
+    <div class='slds-border_bottom'></div>
+    <lightning-card title="Passing object from parent to child">
+        <c-p2c-objectpassingcarousel carouselobject={carouselobjectdata}></c-p2c-objectpassingcarousel>
+    </lightning-card>
+    <div class='slds-border_bottom'></div>
+    <lightning-card title="Passing data on button click">
+        <div class='slds-box slds-var-m-around_medium'>
+            <div class="slds-col slds-size_1-of-2">
+        <lightning-input type="number" label="Enter %" onchange={handlechange} value={value} min="1" max="100"></lightning-input>
+    </div>
+        <c-p2cslider val={value}></c-p2cslider>
+    </div>
+    </lightning-card>
+</template>
