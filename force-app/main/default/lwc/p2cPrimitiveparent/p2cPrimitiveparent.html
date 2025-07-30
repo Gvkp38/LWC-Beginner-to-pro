@@ -13,4 +13,11 @@
         <c-p2cslider val={value}></c-p2cslider>
     </div>
     </lightning-card>
+    <lightning-card title="Calling Child method from parent">
+    <div class='slds-border_bottom'></div>
+    <div class="slds-box slds-var-p-around_medium">
+    <lightning-input type="number" label="Enter status" onchange={handlechangestatus} value={value} min="1" max="100"></lightning-input>
+    <c-p2ccallingchildmethodfromparent></c-p2ccallingchildmethodfromparent>
+</div>
+</lightning-card>
 </template>

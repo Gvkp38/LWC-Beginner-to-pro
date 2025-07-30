@@ -10,4 +10,10 @@ export default class P2cPrimitiveparent extends LightningElement {
         {
             this.value=event.target.value;
         }
+        handlechangestatus(event)
+        {
+            const childmethod=this.template.querySelector('c-p2ccallingchildmethodfromparent')
+            console.log(childmethod);
+            childmethod.abc(event.target.value);
+        }
 }

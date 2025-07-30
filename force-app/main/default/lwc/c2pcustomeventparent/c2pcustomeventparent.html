@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Custom Event">
+        <template if:true={showconfirmation}>
+        <c-c2pcustomeventchild onclose={closemodel} userdetails={userdetails}></c-c2pcustomeventchild>
+    </template>
+    <div class='slds-box  slds-col slds-grid '>
+        <div class="slds-size_1-of-2 ">
+    <lightning-input type="string" label="Enter Name" onchange={handlechange} value={userdetails.name} ></lightning-input>
+</div>
+<div class="slds-size_1-of-2 slds-var-m-left_small">
+    <lightning-input type="integer" label="Enter phone" onchange={handlechange} value={userdetails.phone}></lightning-input>
+</div>
+
+</div>
+<div slot="footer">
+<lightning-button label={currentlabel} onclick={showmodel} variant={varienttype}></lightning-button>
+</div>
+    </lightning-card>
+</template>
