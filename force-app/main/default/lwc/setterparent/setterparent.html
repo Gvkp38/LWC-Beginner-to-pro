@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Setter Example">
+    <div class="slds-p-around_small slds-box">Parent Class
+        <lightning-input label="Name" value={details.name} onchange={notechange} oncopy={copyalert}></lightning-input>
+        <lightning-input label="Age" value={details.age} onchange={notechange}></lightning-input>
+    <c-setterchild details2={details} detailstest={details}></c-setterchild>
+</div>
+</lightning-card>
+</template>
