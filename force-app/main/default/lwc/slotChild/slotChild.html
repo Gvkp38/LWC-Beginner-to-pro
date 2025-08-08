@@ -1,3 +1,9 @@
 <template>
-    
+    <lightning-card title="Card one with nonamed slots"></lightning-card>
+    <slot></slot>
+    <p><slot></slot></p>
+    <lightning-card title="Card two with named slots">
+        <p><slot name="second"></slot></p>
+    </lightning-card>
+
 </template>

@@ -1,3 +1,9 @@
 <template>
-    <c-slot-child></c-slot-child>
+    <lightning-card title="Parent Slot card">
+        <c-slot-child>
+            <div>This is received from parent slot to test </div>
+            <div slot="second"><p>Hi Vasanth it in second slot and passed using slot parameter</p></div>
+        </c-slot-child>
+    </lightning-card>
+    
 </template>
