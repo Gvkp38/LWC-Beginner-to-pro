@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Component A">
+        <lightning-input label="Enter Your Name:" type="text" placeholder="Vasanth" onchange={handlechange}></lightning-input>
+        <lightning-input label="Enter age:" type="number" placeholder="27" onchange={handlechange} maxlength="3" message-when-too-long="Invalid input for age"></lightning-input>
+
+        <lightning-button label="Publish" onclick={publishmessage}></lightning-button>
+    </lightning-card>
+</template>
