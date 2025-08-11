@@ -3,7 +3,7 @@ import Message1 from '@salesforce/messageChannel/ComponentCommunication__c'
 import { subscribe,MessageContext } from 'lightning/messageService';
 export default class Lmscomp2 extends LightningElement {
     @wire(MessageContext) context;
-    currentmessage={'name':{},'age':''};
+    currentmessage={'name':'','age':''};
     
     handlemessage(message)
     {

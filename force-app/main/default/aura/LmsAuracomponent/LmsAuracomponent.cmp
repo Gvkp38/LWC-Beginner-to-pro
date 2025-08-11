@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute type="String" name="Name"/>
+    <aura:attribute type="String" name="Age"/>
+    <lightning:messageChannel type="ComponentCommunication__c"
+            aura:id="sampleMessageChannel" onMessage="{!c.handleChanged}" scope="APPLICATION"/>
+  
+        <lightning:card title="Aura Component">
+            <div class="slds-p-around_medium">
+                <strong>Message received From LMS</strong><br></br>
+                Name: {!v.Name}<br></br>
+                Age: {!v.Age}
+            </div>
+            
+        </lightning:card>
+        
+
+  
+
+</aura:component>	
