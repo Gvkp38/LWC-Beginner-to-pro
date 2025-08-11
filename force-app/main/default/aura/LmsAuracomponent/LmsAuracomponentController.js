@@ -1,7 +1,7 @@
 ({
     handleChanged : function(component, event, helper) {
         
-        alert(JSON.stringify(event.getParam("messagefromcompa")))
+        //alert(JSON.stringify(event.getParam("messagefromcompa")))
         //console.log(event.getParam("messagefromcompa"))
         if (event != null && event.getParam("messagefromcompa") != null) {
             component.set("v.Name", event.getParam("messagefromcompa").name);
