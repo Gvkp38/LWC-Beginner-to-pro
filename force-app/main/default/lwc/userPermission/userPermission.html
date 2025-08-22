@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="User Permission">
+        <div class="slds-p-around_small">
+            <template lwc:if={hasViewAllData} >
+                <strong style="background-color: green;color:aliceblue">
+            Hey user is having view all data access</strong>
+        </template>
+        <template lwc:else>
+            User Don't have Access to View all Data
+        </template>
+        </div>
+    </lightning-card>
+</template>
