@@ -9,5 +9,14 @@
             User Don't have Access to View all Data
         </template>
         </div>
+        <div class="slds-p-around_small">
+            <template lwc:if={Hascustompermission} >
+                <strong style="background-color: rgb(23, 0, 128);color:aliceblue">
+            User HAs custom permission assigned</strong>
+        </template>
+        <template lwc:else>
+            User Don't have custom permission
+        </template>
+        </div>
     </lightning-card>
-</template>
+</template> 
