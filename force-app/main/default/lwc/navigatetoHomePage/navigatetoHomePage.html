@@ -1,0 +1,30 @@
+<template>
+    <lightning-card label="Navigate to home page">
+        <lightning-button label="Navigate to home" variant="brand" onclick={navigatetohome}></lightning-button>
+    </lightning-card>
+    <lightning-card label="Navigate to Chatter page">
+        <lightning-button label="Navigate to Chatter" variant="Success" onclick={navigatetochatter}></lightning-button>
+        <div class="slds-p-around_medium">
+            <strong>other pages that we can navigate to</strong>
+            <span style="color: brown;">pageName</span>
+            <ul style="margin-left: 20px; list-style-type: disc;">
+                
+                <li>home
+                </li>
+                <li>
+                    chatter
+                </li>
+                <li>
+                    today
+                </li>
+                <li>
+                    dataAssessment
+                </li>
+                <li>
+                    filePreview</li>
+            </ul>
+
+        </div>
+    </lightning-card>
+
+</template>
