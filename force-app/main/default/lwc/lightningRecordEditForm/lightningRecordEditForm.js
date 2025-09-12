@@ -31,14 +31,14 @@ export default class LightningRecordEditForm extends NavigationMixin(LightningEl
         })
         this.dispatchEvent(tostmessag)
         this.recordId=event.detail.id;
-        // this[NavigationMixin.Navigate]({
-        //     type: 'standard__recordPage',
-        //     attributes: {
-        //         recordId: event.detail.id, // Replace with your record Id
-        //         objectApiName: Case_objectapi,     // Object API name is optional for view action
-        //         actionName: 'view'            // Options: 'view', 'edit', 'clone'
-        //     }
-        // });
+        this[NavigationMixin.Navigate]({
+            type: 'standard__recordPage',
+            attributes: {
+                recordId: event.detail.id, // Replace with your record Id
+                objectApiName: Case_objectapi,     // Object API name is optional for view action
+                actionName: 'view'            // Options: 'view', 'edit', 'clone'
+            }
+        });
     
 
     }
