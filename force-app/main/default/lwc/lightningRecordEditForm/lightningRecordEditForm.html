@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Account record create form">
+        <lightning-record-edit-form object-api-name={objectApiName} 
+        record-id={recordId} 
+        record-type-id={recordtypeId}
+        onsuccess={handleSuccess}>
+            <lightning-input-field field-name={fields.ContactName} disabled={isdisabled}></lightning-input-field>
+            <lightning-input-field field-name={fields.WebEmail} disabled={isdisabled}></lightning-input-field>
+            <lightning-input-field field-name={fields.Origin} disabled={isdisabled}></lightning-input-field>
+            <lightning-input-field field-name={fields.Subject} disabled={isdisabled}></lightning-input-field>
+            <lightning-input-field field-name={fields.Description} disabled={isdisabled}></lightning-input-field>
+            
+            <lightning-button type="submit" variant="brand" label="Submit"></lightning-button> 
+        
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
