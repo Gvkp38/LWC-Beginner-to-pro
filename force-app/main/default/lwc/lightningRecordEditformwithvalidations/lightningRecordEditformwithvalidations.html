@@ -1,0 +1,31 @@
+<template>
+    <lightning-card icon-name="utility:adduser" title="Contact with Lightning edit form">
+    <lightning-record-edit-form object-api-name={objectApiName}
+    onsubmit={handleSubmit}
+    onsuccess={handleSuccess}
+    onload={handleLoad}
+    record-id={recordId}
+    >
+    <lightning-messages></lightning-messages>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field field-name={fields.Name}></lightning-input-field>
+                <lightning-input label="Phone" value={phone} ></lightning-input>
+                <lightning-input-field field-name={fields.Phone}></lightning-input-field>
+                <lightning-input-field field-name={fields.Email}></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field field-name={fields.Birthdate}></lightning-input-field>
+                <lightning-input-field field-name={fields.MailingAddress}></lightning-input-field>
+            </div>
+
+        </div>
+        <!-- <div slot="footer"> -->
+            
+            <lightning-button label="Submit" variant="brand" type="submit"></lightning-button>
+        <!-- </div> -->
+
+    </lightning-record-edit-form>
+
+</lightning-card>
+</template>
