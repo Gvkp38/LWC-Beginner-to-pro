@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Thread Id Component">
+    <template lwc:if={Threadid}>
+
+        <div class="slds-grid slds-gutters slds-p-around_medium">
+            <div class="slds-col">
+            <span>{Threadid}</span>
+            </div>
+            <div class="slds-col">
+            <span><lightning-button label="Copy" onclick={copyThreadId} icon-name="utility:copy"></lightning-button></span>
+            </div></div>
+    </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Thread Id" class="slds-grid_vertical-align-center">
+        
+        <template if:true={threadId}>
+            <p > <strong>{threadId}</strong></p>
+            <lightning-button label="Copy" onclick={copyThreadId} icon-name="utility:copy"></lightning-button>
+        </template>
+        <template if:true={error}>
+            <p>Error: {error}</p>
+        </template>
+    </lightning-card>
+</template>

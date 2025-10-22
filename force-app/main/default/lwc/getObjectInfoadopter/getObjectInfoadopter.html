@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="objectinforAdopter">
+        <template if:true={Caseobjectinformation}>
+            <div class="slds-p-around_medium">
+            Object Api Name:{Caseobjectinformation.apiName}<br></br>
+            <strong>Record Types</strong>
+            <ul class="slds-list_dotted">
+                
+                
+                <template for:each={recordtypes} for:item="Recordtype">
+                    <li key={Recordtype.recordTypeId}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                        <span>Name: {Recordtype.name}</span>
+                        </div>
+                        <div class="slds-col">
+                        <span>recordTypeId: {Recordtype.recordTypeId}</span>
+                        </div>
+                        </div>
+                    </li>
+                
+                </template>
+                
+              </ul>
+            
+        </div>
+        </template>
+    </lightning-card>
+</template>
