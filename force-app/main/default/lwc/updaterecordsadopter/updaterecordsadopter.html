@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Update Records">
+        <lightning-datatable 
+        columns={columns} 
+        data={contacts} key-field='Id' 
+        onsave={hanleChange}
+        draft-values={draftValues}
+        ></lightning-datatable>
+    </lightning-card>
+</template>

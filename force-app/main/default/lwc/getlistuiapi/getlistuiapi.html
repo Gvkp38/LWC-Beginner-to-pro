@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="List View Api">
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <tr class="slds-line-height_reset">
+              <th>Case Number</th>
+              <th>Subject</th>
+              <th>Case Owner</th>
+            </tr>
+            <template for:each={contacts} for:item='contact' for:index="item">
+            <tr key={contact.fields.Id.value}>
+               
+              <td>{contact.fields.CaseNumber.value}</td>
+              <td>{contact.fields.CaseNumber.value}</td>
+              <td>{contact.fields.CaseNumber.value}</td>
+            </tr></template>
+            
+        </table>          
+        <div class="slds-grid">
+            <div class="slds-m-around_medium">
+                <lightning-button label="Previous" onclick={handlePreviousPage}></lightning-button>
+            </div>
+            <div class="slds-m-around_medium">
+                <lightning-button label="Next" onclick={handleNextPage}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

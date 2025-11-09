@@ -1,0 +1,101 @@
+<template>
+    <lightning-card title="Customer Form">
+      <div class="slds-p-around_medium">
+  
+        <!-- Accordion Wrapper -->
+        <lightning-accordion allow-multiple-sections-open active-section-name={activessections}>
+          
+          <!-- Basic Details Section -->
+          <lightning-accordion-section name="basicDetails" label="Basic Details">
+            <div class="slds-grid slds-wrap slds-gutters">
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="First Name"
+                  name='FirstName'
+                  value={ContactData.FirstName}
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+  
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="Last Name"
+                  value={ContactData.LastName}
+                  name="LastName"
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+  
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="Email"
+                  type="email"
+                  name="Email"
+                  value={ContactData.Email}
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+  
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="Phone"
+                  type="tel"
+                  name="Phone"
+                  value={ContactData.Phone}
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+            </div>
+          </lightning-accordion-section>
+  
+          <!-- Address Section -->
+          <lightning-accordion-section name="address" label="Address">
+            <div class="slds-grid slds-wrap slds-gutters">
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="Street"
+                  value={ContactData.MailingStreet}
+                  name="MailingStreet"
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+  
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="City"
+                  value={ContactData.MailingCity}
+                  name="MailingCity"
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+  
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="State"
+                  value={ContactData.MailingCountry}
+                  name="MailingCountry"
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+  
+              <div class="slds-col slds-size_1-of-2">
+                <lightning-input
+                  label="Postal Code"
+                  value={ContactData.MailingPostalCode}
+                  name="MailingPostalCode"
+                  onchange={handleChange}>
+                </lightning-input>
+              </div>
+            </div>
+          </lightning-accordion-section>
+  
+        </lightning-accordion>
+        <div class="slds-align_absolute-center">
+        <lightning-button label="Cancel" onclick={cancelcontact} variant="destructive"></lightning-button>
+
+  <lightning-button label="Submit" onclick={createcontact} variant="brand"></lightning-button>
+</div>
+      </div>
+    </lightning-card>
+  </template>
+  
